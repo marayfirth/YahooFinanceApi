@@ -54,7 +54,7 @@ namespace YahooFinanceApi
             if (duplicateSymbol != null)
                 throw new ArgumentException($"Duplicate symbol: {duplicateSymbol}.");
 
-            var url = "https://query1.finance.yahoo.com/v7/finance/quote"
+            var url = "https://query2.finance.yahoo.com/v7/finance/quote"
                 .SetQueryParam("symbols", string.Join(",", symbols));
 
             if (fields.Any())
